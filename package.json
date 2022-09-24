@@ -1,0 +1,35 @@
+{
+  "name": "user-authentication-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development&& concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Yurets",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "express": "^4.18.0",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12"
+  },
+  "bugs": {
+    "url": ""
+  }
+}

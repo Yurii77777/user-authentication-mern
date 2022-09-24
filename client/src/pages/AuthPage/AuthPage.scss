@@ -1,0 +1,26 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tab-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input:last-child {
+    margin-bottom: 0;
+}
